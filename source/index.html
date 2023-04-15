@@ -11,7 +11,7 @@
     <a class="logo main-header__logo">
       <img src="/source/img/sedona-logo.svg" width="175" height="96" alt="Логотип Седоны.">
     </a>
-    <nav class="main-nav main-header_main-nav">
+    <nav class="main-nav main-header__main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
@@ -34,27 +34,29 @@
   <main class="main-container">
     <section class="main-hero">
       <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-      <img class="welcome-logo" src="img/sedona-background-mobile.jpg" width="320" height="389">
+      <img class="main-hero__welcome-logo" src="img/sedona-background-mobile.jpg" width="320" height="389"
+        alt="Фото седоны.">
     </section>
     <section class="advantages">
       <div class="advantages__wrapper">
-        <h2 class="advantages__wrapper__header main-header">СЕДОНА — небольшой городок в Аризоне, заслуживающий
+        <h2 class="advantages__wrapper-header main-header">СЕДОНА — небольшой городок в Аризоне, заслуживающий
           большего!</h2>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="advantages__list">
-          <li class="advantages__item advantages__item-illustated">
+          <li class="advantages__item advantages__item--illustated">
             <h3 class="advantages__title">
               Настоящий городок
             </h3>
             <p class="advantages__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="advantages__illustration" src="./img/sedona.jpg" width="320" height="260">
+            <img class="advantages__illustration" src="./img/sedona.jpg" width="320" height="260" alt="Фото седоны.">
           </li>
-          <li class="advantages__item advantages__item-illustated">
+          <li class="advantages__item advantages__item--illustated">
             <h3 class="advantages__title">
               Там есть мост дьявола
             </h3>
             <p class="advantages__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="advantages__illustration" src="./img/bridge.jpg" width="320" height="260">
+            <img class="advantages__illustration" src="./img/bridge.jpg" width="320" height="260"
+              alt="Фото моста дьявола.">
           </li>
           <li class="advantages__item">
             <h3 class="advantages__title">
@@ -75,28 +77,28 @@
             <p class="advantages__description">Большинство едет в Гранд Каньон и толпится там</p>
           </li>
         </ul>
-        <ul class="advantages__offers-list">
-          <li class="advantages__offers-item advantages__offers-accomodation">
-            <h3 class="advatages__offers-item-title">
+        <ul class="offers-list">
+          <li class="offers-list__item offers-list__item--accomodation">
+            <h3 class="offers-list__title">
               Жилье
             </h3>
-            <p class="advantages__ofers-item-description">
+            <p class="offers-list__description">
               Рекомендуем пожить в настоящем мотеле, как в кино!
             </p>
           </li>
-          <li class="advantages__offers-item advantages__offers-food">
-            <h3 class="advatages__offers-item-title">
+          <li class="offers-list__item offers-list__item--food">
+            <h3 class="offers-list__title">
               Еда
             </h3>
-            <p class="advantages__ofers-item-description">
+            <p class="offers-list__description">
               Всегда заказывайте фирменный бургер, вы не разочаруетесь!
             </p>
           </li>
-          <li class="advantages__offers-item advantages__offers-souvenirs">
-            <h3 class="advatages__offers-item-title">
+          <li class="offers-list__item offers-list__item--souvenirs">
+            <h3 class="offers-list__title">
               Сувениры
             </h3>
-            <p class="advantages__ofers-item-description">
+            <p class="offers-list__description">
               Не только китайского, но и местного производства!
             </p>
           </li>
@@ -127,8 +129,8 @@
         </li>
       </ul>
       <div class="footer-copyright copyright">
-        <b class="copyright-text">Разработано:</b>
-        <a class="copyright-link">HTMLACADEMY</a>
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link">HTMLACADEMY</a>
       </div>
     </section>
   </main>
