@@ -1,35 +1,117 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
 </head>
-<main>
-  <section class="catalog-intro">
-    <h2 class="title catalog-intro__title">Фото и видео</h2>
-    <p class="section-description catalog_section_description">Не можете решиться на путешествие из-за курса? Фотографии
-      помогут вам забыть о политике и экономике.</p>
-  </section>
-  <section class="photos">
-    <div class="photo-item photos__photo-item">
-      <a class="photo-item__link" href="#">
-        <img class="photo-item__image" src="img/photo-1-mobile.jpg" width="280" height="280">
-        <h3 class="photo-item__title">неродные просторы</h3>
-        <p class="photo-item__description">Автор фото: Борис</p>
-      </a>
-      <button class="" type="button">
-        1350
-      </button>
-    </div>
-  </section>
-  <section class="catalog-video-intro">
-    <h2 class="title catalog-video-intro__title">Все еще сомневаетесь?</h2>
-  <p class="description catalog-video-intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-  </section>
-  <section class="video">
-    <img src="img/video-mobile.jpg" width="280" height="177">
-  </section>
-</main>
+
+<body class="page__body">
+  <header class="main-header">
+    <a class="logo main-header__logo">
+      <img src="/source/img/sedona-logo.svg" width="175" height="96" alt="Логотип Седоны.">
+    </a>
+    <nav class="main-nav main-header__main-nav">
+      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a>Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="photo.html">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="http://www.htmlacademy.ru">HTMLAcademy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="main-photo">
+    <section class="main-photo__intro intro">
+      <h1 class="visually-hidden">Седона</h1>
+      <img class="intro__background" src="img/sedona-inner-background.jpg" width="320" height="214"
+        alt="Фото седоны.">
+    </section>
+    <section class="catalog-intro">
+      <h2 class="title catalog-intro__title">Фото и видео</h2>
+      <p class="section-description catalog-intro__section-description">Не можете решиться на путешествие из-за курса?
+        Фотографии
+        помогут вам забыть о политике и экономике.</p>
+    </section>
+    <section class="photos">
+      <div class="photo-item photos__photo-item">
+        <a class="photo-item__link" href="#">
+          <img class="photo-item__image" src="img/photo-1-mobile.jpg" width="280" height="280">
+          <h3 class="photo-item__title">неродные просторы</h3>
+          <p class="photo-item__description">Автор фото: Борис</p>
+        </a>
+        <button class="" type="button">
+          1350
+        </button>
+      </div>
+      <div class="photo-item photos__photo-item">
+        <a class="photo-item__link" href="#">
+          <img class="photo-item__image" src="img/photo-2-mobile.jpg" width="280" height="280">
+          <h3 class="photo-item__title">местная растительность</h3>
+          <p class="photo-item__description">Автор фото: Сергей</p>
+        </a>
+        <button class="" type="button">
+          143
+        </button>
+      </div>
+      <div class="photo-item photos__photo-item">
+        <a class="photo-item__link" href="#">
+          <img class="photo-item__image" src="img/photo-3-mobile.jpg" width="280" height="280">
+          <h3 class="photo-item__title">дорога на север</h3>
+          <p class="photo-item__description">Автор фото: Петр</p>
+        </a>
+        <button class="" type="button">
+          96
+        </button>
+      </div>
+      <div class="photo-item photos__photo-item">
+        <a class="photo-item__link" href="#">
+          <img class="photo-item__image" src="img/photo-4-mobile.jpg" width="280" height="280">
+          <h3 class="photo-item__title">мост дьявола</h3>
+          <p class="photo-item__description">Антон</p>
+        </a>
+        <button class="" type="button">
+          254
+        </button>
+      </div>
+    </section>
+    <section class="catalog-video-intro">
+      <h2 class="title catalog-video-intro__title">Все еще сомневаетесь?</h2>
+      <p class="description catalog-video-intro__description">Смотрите видеопрезентацию и скорее за билетами, пока они
+        не подорожали в очередной раз!</p>
+    </section>
+    <section class="video">
+      <img src="img/video-mobile.jpg" width="280" height="177">
+    </section>
+    <section class="footer">
+      <h2 class="footer__title">#visitSEDONA</h2>
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <a href="vk.com">VK</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="telegram.com">TG</a>
+        </li>
+        <li class="footer__social-item">
+          <a href="youtube.com">YT</a>
+        </li>
+      </ul>
+      <div class="footer-copyright copyright">
+        <b class="copyright__text">Разработано:</b>
+        <a class="copyright__link">HTMLACADEMY</a>
+      </div>
+    </section>
+  </main>
+</body>
 
 </html>
