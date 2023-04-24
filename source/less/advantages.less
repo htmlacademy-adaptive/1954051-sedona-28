@@ -6,19 +6,27 @@ margin: 32px 18px 16px 18px;
 }
 
 .advantages__item {
+  margin: 0;
+  background-color: #D6D6D6;
+  width: 320px;
   .list-item-style();
 }
 
-.advantages__item {
-  margin: 0;
-  background-color: #D6D6D6;
+@media (width: tablet-width)
+{
+  .advantages__item {
+    width: 256px;
+  }
+
 }
+
 
 
 .advantages__item--illustated {
 color: @white;
 background-color: @main;
 }
+
 
 .advantages__list {
   .list-item-style();
