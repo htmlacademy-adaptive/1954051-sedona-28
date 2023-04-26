@@ -10,9 +10,10 @@ margin: 32px 18px 16px 18px;
   background-color: #D6D6D6;
   width: 320px;
   .list-item-style();
+  text-align: center;
 }
 
-@media (width: tablet-width)
+@media (min-width: @tablet-width)
 {
   .advantages__item {
     width: 256px;
@@ -27,12 +28,33 @@ color: @white;
 background-color: @main;
 }
 
+@media (min-width: @tablet-width) {
+  advantages__item--illustated {
+    grid-area: 1 / -1;
+  }
+  }
 
 .advantages__list {
   .list-item-style();
 }
 
+@media (min-width: @tablet-width)  {
+.advantages__list {
+display: grid;
+grid-template-columns: repeat(3, 256px);
+  }
+}
+
+.advantages__wrapper-header {
+  text-align: center;
+}
+
+.advantages__wrapper-description {
+  text-align: center;
+}
 
 .advantages__offers-list {
   .list-item-style();
 }
+
+
