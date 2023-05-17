@@ -1,18 +1,18 @@
-.main-nav {
-  max-width: 320px;
-}
 .main-nav__list {
   display: flex;
   flex-direction: column;
   .list-item-style();
 }
 
-@media (min-width: @tablet-width) {
+
   .main-nav__wrapper {
-    display: flex;
-    justify-content: space-between;
+    @media (min-width: @tablet-width) {
     width: 768px;
-    margin: 0 auto;
+  }
+    @media (min-width: @desktop-width) {
+    width: 1200px;
+  }
+
   }
 
   .main-nav__toggle {
