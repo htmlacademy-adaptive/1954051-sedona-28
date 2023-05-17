@@ -11,30 +11,29 @@
 
 <body class="page__body">
   <header class="main-header">
-    <a class="logo main-header__logo">
+    <a class="logo main-header__logo" href="index.html">
       <img src="img/sedona-logo.svg" width="185" height="96" alt="Логотип Седоны.">
     </a>
-<!--
     <nav class="main-nav main-header__main-nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <!--<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      -->
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
+          <li class="site-list__item ">
+            <a class="site-list__link site-list__link--active" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="title" href="photo.html">Фото и видео</a>
+            <a class="site-list__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a href="form.html">Форма отзыва</a>
+            <a class="site-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="site-list__item">
-            <a href="http://www.htmlacademy.ru">HTMLAcademy</a>
+            <a class="site-list__link" href="http://www.htmlacademy.ru">HTMLAcademy</a>
           </li>
         </ul>
       </div>
     </nav>
-  -->
   </header>
   <main class="main-photo">
     <section class="main-photo__intro intro">
@@ -48,46 +47,54 @@
         Фотографии
         помогут вам забыть о политике и экономике.</p>
     </section>
-    <section class="photos">
-      <div class="photo-item photos__photo-item">
+    <section class="main-photo__photos photos">
+      <div class="photo-item photos__photo-item photos__photo-item--wide">
         <a class="photo-item__link" href="#">
           <img class="photo-item__image" src="img/photo-1-mobile.jpg" width="280" height="280">
         </a>
+        <div class="photo-item__text">
           <h3 class="photo-item__title">неродные просторы</h3>
           <p class="photo-item__description">Автор фото: Борис</p>
         <button class="photo-item__like-button" type="button">
         </button>
         <span class="photo-item__likes">1350</span>
       </div>
+      </div>
       <div class="photo-item photos__photo-item">
         <a class="photo-item__link" href="#">
           <img class="photo-item__image" src="img/photo-2-mobile.jpg" width="280" height="280">
         </a>
+        <div class="photo-item__text">
           <h3 class="photo-item__title">местная растительность</h3>
           <p class="photo-item__description">Автор фото: Сергей</p>
         <button class="photo-item__like-button" type="button">
         </button>
         <span class="photo-item__likes">143</span>
+        </div>
       </div>
       <div class="photo-item photos__photo-item">
         <a class="photo-item__link" href="#">
           <img class="photo-item__image" src="img/photo-3-mobile.jpg" width="280" height="280">
         </a>
+        <div class="photo-item__text">
           <h3 class="photo-item__title">дорога на север</h3>
           <p class="photo-item__description">Автор фото: Петр</p>
         <button class="photo-item__like-button" type="button">
         </button>
         <span class="photo-item__likes">96</span>
+        </div>
       </div>
       <div class="photo-item photos__photo-item">
         <a class="photo-item__link" href="#">
           <img class="photo-item__image" src="img/photo-4-mobile.jpg" width="280" height="280">
         </a>
+        <div class="photo-item__text">
           <h3 class="photo-item__title">мост дьявола</h3>
           <p class="photo-item__description">Антон</p>
         <button class="photo-item__like-button" type="button">
         </button>
         <span class="photo-item__likes">254</span>
+        </div>
       </div>
     </section>
     <section class="catalog-video-intro">
@@ -99,6 +106,7 @@
       <img src="img/video-mobile.jpg" width="280" height="177">
     </section>
     <section class="footer">
+      <div class="footer__wrapper">
       <h2 class="footer__title">#visitSEDONA</h2>
       <ul class="footer__social-list">
         <li class="footer__social-item">
@@ -115,6 +123,7 @@
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link">HTMLACADEMY</a>
       </div>
+    </div>
     </section>
   </main>
 </body>

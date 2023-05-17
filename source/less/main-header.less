@@ -1,7 +1,25 @@
 .main-header {
-
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
-. main-header__logo {
+@media (min-width: @tablet-width) {
+  .main-header {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+}
+
+.main-header__logo {
   margin: 0 auto;
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    left: 250px;
+    order: 2;
+  }
+}
+
+.main-header__main-nav {
+  position: relative;
 }
